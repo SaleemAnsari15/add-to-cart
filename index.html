@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Project1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button class="add-button" onclick="
+  cartQuantity++;
+  document.querySelector('#cart-summary').innerText =  `Your bag has ${cartQuantity} Items`;
+  ">Add to Cart</button>
+
+
+
+  <button class="move-wishlist" onclick="
+  cartQuantity--;
+  document.querySelector('#cart-summary').innerText =  `Your bag has ${cartQuantity} Items`;
+  "> Move to Wishlist</button>
+
+
+
+  <button class="Add11Items" onclick="
+  cartQuantity += 2;
+  document.querySelector('#cart-summary').innerText =  `Your bag has ${cartQuantity} Items`;
+  ">Add 1 + 1 Items </button>
+
+
+  <hr>
+
+
+  <h1 id="cart-summary"></h1>
+  <button id="reset" onclick="
+  cartQuantity = 0;
+  document.querySelector('#cart-summary').innerText =  `Your bag has ${cartQuantity} Items`;
+  ">Reset</button>
+
+
+  <script>
+    let cartQuantity = 0;
+    document.querySelector('#cart-summary').innerText =  `Your bag has ${cartQuantity} Items`;
+
+  </script>
+  
+</body>
+</html>
